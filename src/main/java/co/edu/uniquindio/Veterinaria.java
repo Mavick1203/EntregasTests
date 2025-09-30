@@ -1,5 +1,7 @@
 package co.edu.uniquindio;
 
+import java.util.ArrayList;
+
 public class Veterinaria {
     // Atributos Propios
     private String nombre;
@@ -15,6 +17,17 @@ public class Veterinaria {
         this.nit = nit;
         listPropietarios = new Propietario[10];
         listMascotas = new Mascota[10];
+    }
+
+    public ArrayList<Mascota> filtrarPorEspecie(String especie) {
+        ArrayList<Mascota> resultado = new ArrayList<>();
+        for (int i = 0; i < listMascotas.length; i++) {
+            if (listMascotas[i] != null &&
+                    listMascotas[i].getEspecie().equalsIgnoreCase(especie)) {
+                resultado.add(listMascotas[i]);
+            }
+        }
+        return resultado;
     }
 
     public String getNombre() {
