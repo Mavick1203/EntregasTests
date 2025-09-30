@@ -1,7 +1,6 @@
 package co.edu.uniquindio;
 
 public class Main {
-    static void main() {
+    Veterinaria veterinaria = new Veterinaria("carlos", "1111212");
 
-    }
 }
