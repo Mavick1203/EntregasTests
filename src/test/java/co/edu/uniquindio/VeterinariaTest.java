@@ -13,7 +13,7 @@ class VeterinariaTest {
     public void CompararNotNullTest(){
         LOG.info("Inicio de test CompararNotNull");
         Veterinaria veterinaria1 = new Veterinaria("Dogs lifes", "108553");
-        Mascota mascota1 = new Mascota("Roky", "10933", 2, "Perro");
+        Mascota mascota1 = new Mascota("Rokyy", "10933", 2, "Perro");
         assertNotNull(mascota1);
         LOG.info("Fin de test CompararNotNull");
     }
