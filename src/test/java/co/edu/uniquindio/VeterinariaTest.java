@@ -20,7 +20,7 @@ class VeterinariaTest {
     @Test
     public void CompararNullTest(){
         LOG.info("Inicio de test CompararNull");
-        Veterinaria veterinaria2 = new Veterinaria("Animal Medical", "1114");
+        Veterinaria veterinaria2 = new Veterinaria("Animals Medical", "1114");
         Propietario propietario1 = null;
         assertNull(propietario1);
         LOG.info("Fin de test CompararNull");
