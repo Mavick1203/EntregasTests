@@ -55,4 +55,20 @@ class VeterinariaTest {
         LOG.info("Fin de test FiltrarPorEspecie");
     }
 
+    @Test
+    public void testAssertTrue() {
+        LOG.info("Inicio Test AssertTrue");
+        Mascota mascota = new Mascota("Firulais","113",5, "perro");
+        assertTrue(mascota.getNombre().equals("Firulais"));
+        LOG.info("Fin test assertTrue");
+    }
+
+    @Test
+    public void testAssertNotEquals(){
+        LOG.info("Inicio Test NotEquals");
+        Mascota mascota = new Mascota("Firulais","113",5, "perro");
+        assertNotEquals("999", mascota.getId() );
+        LOG.info("Fin test NotEquals");
+    }
+
 }
