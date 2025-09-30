@@ -29,8 +29,9 @@ class VeterinariaTest {
         LOG.info("Inicio de test CompararNombre");
         Veterinaria veterinaria3 = new Veterinaria("Snoopys", "16546");
         Mascota mascota3 = new Mascota("Rodrigo", "22234");
-        assertFalse( veterinaria3.verificarNombre("Rodrigo"));
+        assertFalse(veterinaria3.verificarNombre("Rodrigo"));
+        LOG.info("Fin de test CompararNombre");
     }
-    /// listMascotas esta vacia , corregir el Assertfalse
+    // listMascotas esta vacia , corregir el Assertfalse
 
 }

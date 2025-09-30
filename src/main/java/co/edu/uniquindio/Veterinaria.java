@@ -57,15 +57,16 @@ public class Veterinaria {
         return false;
     }
 
-    public boolean verificarNombre(String nombre){
-        for(int i = 0; i < listMascotas.length; i++) {
-            if(listMascotas[i].getNombre().equals(nombre)){
+    public boolean verificarNombre(String nombre) {
+        for (int i = 0; i < listMascotas.length; i++) {
+            if (listMascotas[i] != null && listMascotas[i].getNombre().equals(nombre)) {
                 return true;
-
             }
         }
         return false;
     }
+
+
     public Mascota VerificarNull(){
         for (int i = 0; i < listMascotas.length; i++) {
             if (listMascotas[i] != null) {
